@@ -6,8 +6,19 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      aspectRatio: {
+        auto: "auto",
+        box: "1",
+        landscape: "4/3",
+        portrait: "3/4",
+        video: "16/9",
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/aspect-ratio"),
+  ],
 }
 

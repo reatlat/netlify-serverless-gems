@@ -1,0 +1,17 @@
+<footer class="[&_a:hover]:text-red-600" aria-labelledby="footer-heading">
+  <h2 id="footer-heading" class="sr-only">Footer</h2>
+  <div class="mx-auto max-w-7xl px-6 py-8 lg:px-8 text-xs leading-5">
+    <div class="mt-8 border-t border-gray-900/10 dark:border-gray-100/10 pt-8 md:flex md:items-center md:justify-between">
+      <div class="flex space-x-6 md:order-2">
+        <a href="#">Privacy</a>
+        <a href="#">License</a>
+        <a href="#">About</a>
+      </div>
+      <p class="mt-8 md:order-1 md:mt-0">
+{#        Last built on {{ build.timestamp.formatted }} (<a href="https://www.github.com/{{ build.issues.owner }}/{{ build.issues.repo }}/commit/{{ build.hash.full }}" rel="noreferrer noopener" >{{ build.hash.short }}</a>)<br/><br/>#}
+        Released under the MIT License.<br/>
+        Copyright &copy; <span x-text="(new Date()).getFullYear()">{{ build.timestamp.year }}</span> <a href="https://alex.zappa.dev/">Alex Zappa</a>. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
