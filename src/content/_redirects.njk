@@ -1,0 +1,14 @@
+---
+permalink: '/_redirects'
+eleventyExcludeFromCollections: true
+---
+
+{# Misc #}
+/sitemap/ /sitemap.xml
+/sitemap_index.xml /sitemap.xml
+
+{# Plausible proxy #}
+/api/event https://plausible.io/api/event 200
+
+{# API Proxy #}
+/api/* /.netlify/functions/:splat 200
