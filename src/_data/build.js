@@ -17,7 +17,7 @@ module.exports = () => {
     url: process.env.URL || "http://localhost:8080",
     timezone: process.env.TIMEZONE || "UTC",
     issues: {
-      owner: "reatlat",
+      owner: "serverless-gems",
       repo: "netlify-serverless-gems",
     },
     hash: {
