@@ -1,8 +1,9 @@
 module.exports = {
-	title: "Serverless Gems",
+	title: "Serverless Gems for Netlify",
+  suffix: " | Serverless Gems",
 	url: "https://serverless-gems.netlify.app/",
 	language: "en",
-	description: "Discover the power of serverless with Netlify! 💻🌐 Build scalable and efficient web applications.",
+	description: "Serverless Gems is a curated collection of open-source projects for building serverless web applications! 🌐💡 JavaScript-powered and designed for easy deployment, maintenance, and scalability.",
 	author: {
 		name: "Alex Zappa",
 		email: "alex@zappa.dev",
