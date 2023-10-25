@@ -33,5 +33,12 @@ module.exports = {
       size: 32,
       fill: "currentColor"
     });
+  },
+
+  // Easily grab an svg image and render the raw svg contents with the ability to add classes
+  // Ex: {{ '/src/assets/images/logo.svg' | svgContents("h-8 w-8 text-red-500") | safe }}
+  svgContents: function (eleventyConfig) {
+    const plugin = require("eleventy-plugin-svg-contents");
+    eleventyConfig.addPlugin(plugin);
   }
 };

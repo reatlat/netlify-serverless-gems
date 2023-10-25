@@ -62,6 +62,7 @@
     "alpinejs": "^3.13.2",
     "autoprefixer": "^10.4.16",
     "eleventy-plugin-phosphoricons": "^1.0.1",
+    "eleventy-plugin-svg-contents": "^0.7.0",
     "esbuild": "^0.19.5",
     "html-minifier": "^4.0.0",
     "isbot": "^3.7.0",
