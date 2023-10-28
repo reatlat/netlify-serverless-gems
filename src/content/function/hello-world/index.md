@@ -33,8 +33,5 @@ exports.handler = async (event, context) => {
 
 Check the source code on [GitHub](https://github.com/{{ build.issues.owner }}/{{ build.issues.repo }}/blob/main/netlify/functions/{{ title | slugify }}/index.js).
 
-
-## Test how it works
-
 {% include "./test.njk" %}
 
