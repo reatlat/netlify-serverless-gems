@@ -4,7 +4,7 @@ import colorScheme from "./_detectColorScheme";
 
 const {trackEvent, trackPageview, enableAutoOutboundTracking} = Plausible({
   domain: "serverless-gems.netlify.app",
-  apiHost: "https://serverless-gems.netlify.app",
+  apiHost: "https://netlify.serverless-gems.dev",
 });
 
 document.addEventListener("DOMContentLoaded", () => {
