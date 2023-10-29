@@ -3,7 +3,7 @@ import Plausible from "plausible-tracker";
 import colorScheme from "./_detectColorScheme";
 
 const {trackEvent, trackPageview, enableAutoOutboundTracking} = Plausible({
-  domain: "serverless-gems.netlify.app",
+  domain: "netlify.serverless-gems.dev",
   apiHost: "https://netlify.serverless-gems.dev",
 });
 
