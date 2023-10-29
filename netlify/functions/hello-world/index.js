@@ -1,4 +1,6 @@
-// Hello World API
+/**
+ * @link https://netlify.serverless-gems.dev/function/hello-world/
+ */
 
 exports.handler = async (event, context) => {
 
