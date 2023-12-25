@@ -40,12 +40,14 @@
            }).catch((error) => {
              console.error(error)
              that.error = true
+             that.executionDuration = (performance.now() - timer).toFixed(2)
              that.prismJson(error, 'responseJson')
              that.submitButton = 'Take a Screenshot'
            })
          } catch (error) {
            console.error(error)
            that.error = true
+           that.executionDuration = (performance.now() - timer).toFixed(2)
            that.prismJson(error, 'responseJson')
            that.submitButton = 'Take a Screenshot'
          }
@@ -72,11 +74,12 @@
     <pre id="responseJson" class="language-json" x-show="error">
       {# Silence is golden #}
     </pre>
-    <div id="resultImg" x-ref="resultImg" x-show="executionDuration">
+    <div id="resultImg" x-ref="resultImg" x-show="executionDuration && !error">
       {# Silence is golden #}
     </div>
     <a :href="`${location.protocol}//${location.host}/.netlify/functions/open-graph-image-generator/?url=${encodeURIComponent(url)}`"
-       x-show="executionDuration"
+       x-show="executionDuration && !error"
+       target="_blank"
        class="inline-block mt-2">
       Open image in new tab
     </a>
