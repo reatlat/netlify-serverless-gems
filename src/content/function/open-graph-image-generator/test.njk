@@ -41,7 +41,11 @@
              console.error(error)
              that.error = true
              that.executionDuration = (performance.now() - timer).toFixed(2)
-             that.prismJson(error, 'responseJson')
+             that.prismJson({
+                status: error.response.status,
+                statusText: error.response.message,
+                message: `Error capturing screenshot for ${that.url}`
+             }, 'responseJson')
              that.submitButton = 'Take a Screenshot'
            })
          } catch (error) {
