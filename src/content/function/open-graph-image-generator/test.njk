@@ -44,7 +44,8 @@
              that.prismJson({
                 status: error.response.status,
                 statusText: error.message,
-                message: `Error capturing screenshot for ${that.url}`
+                message: `Error capturing screenshot for ${that.url}`,
+                note: 'This is a known issue with the screenshot service. Please try again.'
              }, 'responseJson')
              that.submitButton = 'Take a Screenshot'
            })
