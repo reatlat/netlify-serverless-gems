@@ -19,6 +19,7 @@ module.exports = {
       landscape: "4/3",
       portrait: "3/4",
       video: "16/9",
+      og: "1.91/1",
     },
     extend: {
     },
