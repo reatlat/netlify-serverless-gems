@@ -46,7 +46,7 @@ exports.handler = async (event, context) => {
     const page = await browser.newPage();
 
     // go to page and wait 1second for page to load
-    await page.goto(url, { waitUntil: "domcontentloaded" });
+    await page.goto(url, { waitUntil: "networkidle2" });
 
     const buffer = await page.screenshot();
 
