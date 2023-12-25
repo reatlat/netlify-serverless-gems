@@ -83,3 +83,8 @@ Check the source code on [GitHub](https://github.com/{{ build.issues.owner }}/{{
 
 {% include "./test.njk" %}
 
+## Netlify limits
+
+Netlify serverless function executing time limited by 10 seconds.
+
+If you reach out 10 seconds limit, Netlify will close connection for your request.
