@@ -43,7 +43,7 @@
              that.executionDuration = (performance.now() - timer).toFixed(2)
              that.prismJson({
                 status: error.response.status,
-                statusText: error.response.message,
+                statusText: error.message,
                 message: `Error capturing screenshot for ${that.url}`
              }, 'responseJson')
              that.submitButton = 'Take a Screenshot'
