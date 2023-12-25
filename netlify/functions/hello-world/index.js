@@ -1,4 +1,5 @@
 /**
+ * Hello World
  * @link https://netlify.serverless-gems.dev/function/hello-world/
  */
 
