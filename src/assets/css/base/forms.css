@@ -54,7 +54,6 @@
     @apply border-red-500 text-red-700 placeholder-red-700 focus:border-red-500 focus:outline-none focus:ring-red-500;
   }
 
-  button,
   [type="submit"] {
     @apply rounded bg-red-600 shadow-sm hover:bg-red-500;
     @apply px-3.5 py-2.5 cursor-pointer;
