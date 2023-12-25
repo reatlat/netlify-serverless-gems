@@ -12,6 +12,15 @@
        submitForm() {
          const that = this;
          this.error = false
+         if (!this.url || !this.url.match(/^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([/\w .-]*)*\/?$/)) {
+           this.error = true
+           this.prismJson({
+             status: 400,
+             statusText: 'Bad Request',
+             message: 'Please enter a valid URL'
+           }, 'responseJson')
+           return
+         }
          this.submitButton = 'Taking a Screenshot...'
          this.executionDuration = 0
          let timer = performance.now()
@@ -67,7 +76,9 @@
         <h2 class="text-xl inline m-0 p1">Test how it works</h2>
       </legend>
       <label for="url">Type any website URL:</label>
-      <input type="text" id="url" name="url" x-model="url">
+      <input type="url" id="url" name="url" x-model="url" required
+             minlength="10" placeholder="https://example.com"
+             pattern="https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)">
     </fieldset>
     <input type="submit" :value="submitButton" value="Take a Screenshot">
   </form>
