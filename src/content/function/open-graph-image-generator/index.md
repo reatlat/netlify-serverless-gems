@@ -4,6 +4,11 @@ description: The function generates an Open Graph image from a website URL.
 tags: [image, open-graph, puppeteer]
 ---
 
+The Open Graph Image Generator is a function that generates an Open Graph image from a website URL.
+
+It uses Puppeteer and Chromium to launch a headless browser, navigate to the specified URL, take a screenshot, and return the image as a base64-encoded string. It handles `HTTP GET` requests and returns appropriate error messages for invalid or missing parameters. The function is compatible with Netlify and has a maximum execution time of 10 seconds before Netlify closes the connection.
+
+The source code for the function:
 
 ```js
 const puppeteer = require("puppeteer-core");
