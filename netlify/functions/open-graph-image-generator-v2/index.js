@@ -20,8 +20,10 @@ exports.handler = async (event, context) => {
       }),
     };
 
-  const { title } = decodeURIComponent(queryStringParameters || `Hello World!`);
-  const { subtitle } = decodeURIComponent(queryStringParameters || `serverless-gems.com`);
+  let { title, subtitle } = queryStringParameters;
+
+  title = decodeURIComponent(title || `Hello World!`);
+  subtitle = decodeURIComponent(subtitle || `serverless-gems.com`);
 
   let template = `
     <!doctype html>
